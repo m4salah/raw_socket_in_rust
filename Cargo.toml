@@ -3,5 +3,13 @@ name = "raw_socket_in_rust"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "send"
+path = "src/send.rs"
+
+[[bin]]
+name = "recv"
+path = "src/recv.rs"
+
 [dependencies]
 nix = { version = "0.29.0", features = ["net", "socket"] }
